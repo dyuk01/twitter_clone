@@ -4,49 +4,38 @@ This project is a Twitter backend application built using Node.js, Prisma, SQLit
 
 ## Features
 
-- **Node.js:** Backend server using Node.js for handling HTTP requests.
-- **Prisma:** Database ORM for interfacing with an SQLite database.
-- **SQLite:** Embedded database for storing application data.
-- **JWT Authentication:** JSON Web Token-based authentication for secure API access.
-- **Passwordless Authentication:** Authentication method without using passwords.
-- **Middlewares:** Implemented for authentication, error handling, and more.
-- **User Management:** Functionalities for managing users, their profiles, and tweets.
-- **Docker Containerization:** Docker setup for containerizing the application.
+- **User Authentication**: Secure sign-up and login functionality.
+- **Tweet Functionality**: Users can compose, edit, and delete tweets.
+- **Follow System**: Ability to follow and unfollow other users.
+- **Timeline**: View tweets from followed users in a chronological feed.
+- **Profile Pages**: Personalized user profiles displaying user information and tweets.
 
-## Setup
+## Technologies Used
 
-1. **Clone the repository:**
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: Passport.js
+
+## Installation
+
+1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd twitter-backend
+   git clone https://github.com/dyuk01/twitter_clone.git
+   cd twitter_clone
+   ```
 
-2. **Run Project:**
-  ```bash
+2. **Install Dependencies:**
+   ```bash
    npm install
-   npx prisma migrate dev
-   npm start
-```
+   ```
 
+3. **Configure Environment Variables:**
+   ```bash
+   PORT=3000
+   MONGODB_URI=your_mongodb_uri
+   SESSION_SECRET=your_session_secret
+   ```
 
-# Endpoints
-
-## Authentication Endpoints
-
-- `POST /auth/login`: User login endpoint.
-- `POST auth/logout`: User logout endpoint.
-- `POST /auth/reset-password`: Reset password endpoint (passwordless).
-
-## Other Endpoints
-
-There are various other endpoints for user management, tweets, and additional functionalities.
-- Users :  POST,GET - /users.
-- Tweets : POST,GET - /tweets.
-
-# Middlewares
-
-## Implemented Middlewares
-
-- `authMiddleware`: Middleware for JWT authentication.
-- `errorHandlingMiddleware`: Error handling middleware.
 
 
