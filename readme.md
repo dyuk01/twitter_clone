@@ -51,7 +51,6 @@ This project is a Twitter backend application built using Node.js, Prisma, SQLit
 - **Compose a Tweet**: Share your thoughts by posting a new tweet.
 - **Follow Users**: Discover and follow other users to see their tweets in your timeline.
 - **Edit Profile**: Update your personal information and profile picture
-   ```
 
 
 
